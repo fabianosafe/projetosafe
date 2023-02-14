@@ -7,8 +7,9 @@ abra a pasta cd supabase/docker
 copie o .env.example para .env precisa editar o arquivo .env e o supabase/docker/volumes/api/kong.yml 
 no .env edite 
 POSTGRES_PASSWORD= NÃO USE @ NA SENHA 
-JWT_SECRET= 
+
 use o link https://supabase.com/docs/guides/self-hosting#api-keys para pegar uma JWT e criar anonkey e servicekey 
+JWT_SECRET= 
 ANON_KEY= 
 SERVICE_ROLE_KEY=
 
