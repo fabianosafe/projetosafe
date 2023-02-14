@@ -4,7 +4,13 @@ Clonando o repositorio do supabase com o GitDesktop instalado abra cmd digite gi
 
 abra a pasta cd supabase/docker
 
-copie o .env.example para .env precisa editar o arquivo .env e o supabase/docker/volumes/api/kong.yml no .env edite POSTGRES_PASSWORD= NÃO USE @ NA SENHA JWT_SECRET= use o link https://supabase.com/docs/guides/self-hosting#api-keys para pegar uma JWT e criar anonkey e servicekey ANON_KEY= SERVICE_ROLE_KEY=
+copie o .env.example para .env precisa editar o arquivo .env e o supabase/docker/volumes/api/kong.yml 
+no .env edite 
+POSTGRES_PASSWORD= NÃO USE @ NA SENHA 
+JWT_SECRET= 
+use o link https://supabase.com/docs/guides/self-hosting#api-keys para pegar uma JWT e criar anonkey e servicekey 
+ANON_KEY= 
+SERVICE_ROLE_KEY=
 
 no kong.yml consumers:
 
@@ -12,7 +18,9 @@ username: anon keyauth_credentials:
 key: COLOQUE AQUI A ANONKEY
 username: service_role keyauth_credentials:
 key: COLOQUE AQUI A SERVICEKEY
-verifique se o composer esta rodando no cmd docker compose version
+
+verifique se o composer esta rodando no cmd:
+docker compose version
 
 //instalando o container do supabase q possui os docker do varios servicos dos recursos no cmd docker compose up
 
