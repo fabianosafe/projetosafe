@@ -1,6 +1,6 @@
 Baixe Docker Desktop https://www.docker.com/products/docker-desktop/
 
-Clonando o repositorio do supabase com o GitDesktop instalado abra cmd digite git clone --depth 1 https://github.com/supabase/supabase
+Clonando o repositorio do supabase com o GitDesktop instalado abra cmd digite git clone --depth 1 https://github.com/supabase/supabase (ele cria a pasta supabase)
 
 abra a pasta cd supabase/docker
 
