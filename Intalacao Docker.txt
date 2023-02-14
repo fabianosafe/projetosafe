@@ -6,8 +6,14 @@ abra a pasta cd supabase/docker
 
 copie o .env.example para .env precisa editar o arquivo .env e o supabase/docker/volumes/api/kong.yml 
 no .env edite 
-POSTGRES_PASSWORD= NÃO USE @ NA SENHA 
+exmplo .env
+POSTGRES_PASSWORD=senhafortesafesistemas5501
+JWT_SECRET=vfqhm3nklowcxunsb3da2tzsdis1bae1w1aim59p
+ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ewogICAgInJvbGUiOiAiYW5vbiIsCiAgICAiaXNzIjogInN1cGFiYXNlIiwKICAgICJpYXQiOiAxNjc0NzA1NjAwLAogICAgImV4cCI6IDE4MzI0NzIwMDAKfQ.QTMfHFScCorrWrFOIL_xIdL3IC08DgSArb8-0TPaz1o
+SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ewogICAgInJvbGUiOiAic2VydmljZV9yb2xlIiwKICAgICJpc3MiOiAic3VwYWJhc2UiLAogICAgImlhdCI6IDE2NzQ3MDU2MDAsCiAgICAiZXhwIjogMTgzMjQ3MjAwMAp9.pOWIVzVjWBkGgx3p5puMlBQIbZHqvekgq3y7oHzayoY
 
+dicas .env
+POSTGRES_PASSWORD= NÃO USE @ NA SENHA 
 use o link https://supabase.com/docs/guides/self-hosting#api-keys para pegar uma JWT e criar anonkey e servicekey 
 JWT_SECRET= 
 ANON_KEY= 
@@ -23,6 +29,7 @@ key: COLOQUE AQUI A SERVICEKEY
 verifique se o composer esta rodando no cmd:
 docker compose version
 
-//instalando o container do supabase q possui os docker do varios servicos dos recursos no cmd docker compose up
+//instalando o container do supabase q possui os docker do varios servicos dos recursos no cmd:
+docker compose up
 
 //pra rodar o prg precisa adicionar manualmente o usuario ADMIN e pelo supabase monitor
