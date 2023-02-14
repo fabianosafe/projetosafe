@@ -33,6 +33,6 @@ verifique se o composer esta rodando no cmd:
 docker compose version
 
 //instalando o container do supabase q possui os docker do varios servicos dos recursos no cmd:
-docker compose up
+supabase/docker/docker compose up
 
 //pra rodar o prg precisa adicionar manualmente o usuario ADMIN e pelo supabase monitor
