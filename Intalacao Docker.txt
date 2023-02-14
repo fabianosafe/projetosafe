@@ -19,12 +19,15 @@ JWT_SECRET=
 ANON_KEY= 
 SERVICE_ROLE_KEY=
 
-no kong.yml consumers:
+no kong.yml 
 
-username: anon keyauth_credentials:
-key: COLOQUE AQUI A ANONKEY
-username: service_role keyauth_credentials:
-key: COLOQUE AQUI A SERVICEKEY
+consumers:
+  - username: anon
+    keyauth_credentials:
+      - key:COLOQUE AQUI A ANON_KEY
+  - username: service_role
+    keyauth_credentials:
+      - key:COLOQUE AQUI A SERVICE_ROLE_KEY
 
 verifique se o composer esta rodando no cmd:
 docker compose version
